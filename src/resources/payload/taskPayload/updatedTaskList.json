@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Updated Task Name"
+  },
+  {
+    "description": "Updated Task Description"
+  },
+  {
+    "markdown_description": "Updated Task Description"
+  },
+  {
+    "archived": true
+  },
+  {
+    "tags": ["tag name 3"]
+  },
+  {
+    "status": "in progress"
+  },
+  {
+    "priority": 4
+  },
+  {
+    "due_date": 1749305600000
+  },
+  {
+    "due_date_time": true
+  },
+  {
+    "time_estimate": 8740000
+  },
+  {
+    "start_date": 1749305600000
+  },
+  {
+    "start_date_time": true
+  },
+  {
+    "notify_all": false
+  },
+  {
+    "check_required_custom_fields": false
+  },
+  {
+    "name": "Updated Task Name",
+    "description": "Updated Task Description",
+    "markdown_description": "Updated Task Description",
+    "tags": ["tag name 4"],
+    "status": "in progress",
+    "priority": 4
+  }
+]
