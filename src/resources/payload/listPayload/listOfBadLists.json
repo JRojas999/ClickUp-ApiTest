@@ -1,0 +1,80 @@
+[
+  {
+    "data": {
+      "name": ""
+    },
+    "status": 400
+  },
+  {
+    "data": {},
+    "status": 400
+  },
+  {
+    "data": {
+      "name": 15263987
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": true
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "due_date": true
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "due_date": "due_date"
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "due_date_time": "due_date_time"
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "due_date_time": 158963
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "priority": false
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "priority": "urgent"
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "status": "sky"
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New List Name",
+      "status": 1256
+    },
+    "status": 500
+  }
+]
