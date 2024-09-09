@@ -1,0 +1,85 @@
+[
+  {
+    "name": "New Task Name"
+  },
+  {
+    "name": "New Task Name",
+    "description": "New Task Description"
+  },
+  {
+    "name": "New Task Name",
+    "markdown_description": "New Task Description"
+  },
+  {
+    "name": "New Task Name",
+    "archived": false
+  },
+  {
+    "name": "New Task Name",
+    "tags": ["tag name 1"]
+  },
+  {
+    "name": "New Task Name",
+    "status": "To Do"
+  },
+  {
+    "name": "New Task Name",
+    "priority": 3
+  },
+  {
+    "name": "New Task Name",
+    "due_date": 1759305600000
+  },
+  {
+    "name": "New Task Name",
+    "due_date_time": false
+  },
+  {
+    "name": "New Task Name",
+    "time_estimate": 8640000
+  },
+  {
+    "name": "New Task Name",
+    "start_date": 1759305600000
+  },
+  {
+    "name": "New Task Name",
+    "start_date_time": false
+  },
+  {
+    "name": "New Task Name",
+    "notify_all": true
+  },
+  {
+    "name": "New Task Name",
+    "check_required_custom_fields": true
+  },
+  {
+    "name": "New Task Name",
+    "custom_fields": [
+      {
+        "name": "MI-comentario",
+        "type": "short_text"
+      }
+    ]
+  },
+  {
+    "name": "New Task Name",
+    "description": "New Task Description",
+    "markdown_description": "New Task Description",
+    "archived": false,
+    "tags": ["tag name 1"],
+    "status": "To Do",
+    "priority": 3,
+    "due_date": 1759305600000,
+    "due_date_time": false,
+    "time_estimate": 8640000,
+    "start_date": 1759305600000,
+    "start_date_time": false,
+    "notify_all": true,
+    "parent": null,
+    "links_to": null,
+    "check_required_custom_fields": true,
+    "custom_fields": [{ "name": "MI-comentario", "type": "short_text" }]
+  }
+]

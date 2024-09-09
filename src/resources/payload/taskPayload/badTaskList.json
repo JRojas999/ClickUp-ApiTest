@@ -1,0 +1,109 @@
+[
+  {
+    "data": {
+      "name": ""
+    },
+    "status": 400
+  },
+  {
+    "data": {},
+    "status": 400
+  },
+  {
+    "data": {
+      "name": 15263987
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": true
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": true
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "description": 6812143213
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "status": "Open"
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "priority": 5
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "due_date": "due_date"
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "due_date_time": "due_date_time"
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "time_estimate": "time_estimate"
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "start_date": "start_date"
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "start_date_time": "start_date_time"
+    },
+    "status": 500
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "parent": 677891321
+    },
+    "status": 400
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "links_to": 564212316
+    },
+    "status": 401
+  },
+  {
+    "data": {
+      "name": "New Task Name",
+      "custom_fields": [{
+        "value": "Mi-comentario"
+      }]
+    },
+    "status": 400
+  }
+]
