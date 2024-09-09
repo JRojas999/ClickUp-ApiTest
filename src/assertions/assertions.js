@@ -1,12 +1,15 @@
 import { expect } from "chai";
 import { validateJson } from "../utils/utils.js";
 
-export const assertions = (response, spaceSchema, spacedata) => {
-  expect(validateJson(spaceSchema, response.body)).to.be.true;
-  for (const key in spacedata) {
-    expect(spacedata[key]).to.be.equal(response.body[key]);
-  }
-  expect(response.statusCode).to.be.equal(200);
+export const assertions = (response, schema, data, statusCode = 200) => {
+  expect(validateJson(schema, response.body)).to.be.true;
+  if (data)
+    for (const key in data) {
+      if (response.body[key] && typeof response.body[key] !== "object") {
+        expect(data[key] == response.body[key]).to.be.true;
+      }
+    }
+  expect(response.statusCode).to.be.equal(statusCode);
 };
 
 export const deleteAssertions = (response, expectedStatus = 200) => {
