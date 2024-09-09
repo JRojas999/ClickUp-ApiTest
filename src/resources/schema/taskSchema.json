@@ -135,19 +135,19 @@
       "type": "null"
     },
     "priority": {
-      "type": "null"
+      "type": ["null", "object"]
     },
     "due_date": {
-      "type": "null"
+      "type": ["null", "string"]
     },
     "start_date": {
-      "type": "null"
+      "type": ["null", "string"]
     },
     "points": {
       "type": "null"
     },
     "time_estimate": {
-      "type": "null"
+      "type": ["null", "integer"]
     },
     "time_spent": {
       "type": "integer"
