@@ -1,0 +1,349 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "null"
+    },
+    "private": {
+      "type": "boolean"
+    },
+    "avatar": {
+      "type": "null"
+    },
+    "admin_can_manage": {
+      "type": "null"
+    },
+    "statuses": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "orderindex": {
+              "type": "integer"
+            },
+            "color": {
+              "type": "string"
+            }
+          },
+          "required": ["id", "status", "type", "orderindex", "color"]
+        }
+      ]
+    },
+    "multiple_assignees": {
+      "type": "boolean"
+    },
+    "features": {
+      "type": "object",
+      "properties": {
+        "due_dates": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "start_date": {
+              "type": "boolean"
+            },
+            "remap_due_dates": {
+              "type": "boolean"
+            },
+            "remap_closed_due_date": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "enabled",
+            "start_date",
+            "remap_due_dates",
+            "remap_closed_due_date"
+          ]
+        },
+        "sprints": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "time_tracking": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "harvest": {
+              "type": "boolean"
+            },
+            "rollup": {
+              "type": "boolean"
+            },
+            "default_to_billable": {
+              "type": "integer"
+            }
+          },
+          "required": ["default_to_billable"]
+        },
+        "points": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "custom_items": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "checklists": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "priorities": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "priorities": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "color": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "orderindex": {
+                      "type": "string"
+                    },
+                    "priority": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["color", "id", "orderindex", "priority"]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "color": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "orderindex": {
+                      "type": "string"
+                    },
+                    "priority": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["color", "id", "orderindex", "priority"]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "color": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "orderindex": {
+                      "type": "string"
+                    },
+                    "priority": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["color", "id", "orderindex", "priority"]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "color": {
+                      "type": "string"
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "orderindex": {
+                      "type": "string"
+                    },
+                    "priority": {
+                      "type": "string"
+                    }
+                  },
+                  "required": ["color", "id", "orderindex", "priority"]
+                }
+              ]
+            }
+          },
+          "required": ["enabled", "priorities"]
+        },
+        "tags": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "check_unresolved": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "subtasks": {
+              "type": "null"
+            },
+            "checklists": {
+              "type": "null"
+            },
+            "comments": {
+              "type": "null"
+            }
+          },
+          "required": ["enabled", "subtasks", "checklists", "comments"]
+        },
+        "zoom": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "milestones": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "custom_fields": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "remap_dependencies": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "dependency_warning": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "status_pies": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "emails": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "multiple_assignees": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          },
+          "required": ["enabled"]
+        },
+        "scheduler_enabled": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "due_dates",
+        "sprints",
+        "time_tracking",
+        "points",
+        "custom_items",
+        "zoom",
+        "milestones",
+        "dependency_warning",
+        "status_pies",
+        "scheduler_enabled"
+      ]
+    },
+    "archived": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "color",
+    "private",
+    "avatar",
+    "admin_can_manage",
+    "statuses",
+    "multiple_assignees",
+    "features",
+    "archived"
+  ]
+}
