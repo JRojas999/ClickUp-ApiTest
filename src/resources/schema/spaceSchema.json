@@ -8,7 +8,7 @@
       "type": "string"
     },
     "color": {
-      "type": "null"
+      "type": ["null", "string"]
     },
     "private": {
       "type": "boolean"
