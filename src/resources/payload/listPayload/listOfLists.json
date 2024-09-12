@@ -32,7 +32,7 @@
     "due_date": 1756699200000,
     "due_date_time": false,
     "priority": 1,
-    "assignee": 183,
+    "assignee": null,
     "status": "red"
   }
 ]

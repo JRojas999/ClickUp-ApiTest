@@ -4,9 +4,13 @@ import taskSchema from "../../src/resources/schema/taskSchema.json"  with { type
 import errorSchema from "../../src/resources/schema/errorSchema.json" with { type: "json" };
 import { create, deleteR, get } from "../../src/clickupApi/requestBase.js";
 import { setUri } from "../../src/utils/utils.js";
-import { spaceId } from "../../src/credentials/credentials.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
+import { badTaskId } from "../../src/resources/ids/invalidIds.js";
 import { task, tasks, list, lists } from "../../src/clickupApi/endpoint.js";
-import { assertions, deleteAssertions } from "../../src/assertions/assertions.js";
+import {
+  assertions,
+  deleteAssertions,
+} from "../../src/assertions/assertions.js";
 
 describe("Verify getting and deleting Task", () => {
   let listId = "";
@@ -43,14 +47,12 @@ describe("Verify getting and deleting Task", () => {
   });
 
   describe("Verify getting and deleting Task negative cases", () => {
-    let badTaskId = "98798341315";
-
-    it("Should get a task", async () => {
+    it("Should not get a task", async () => {
       const response = await get(setUri(task, badTaskId));
       assertions(response, errorSchema, undefined, 401);
     });
 
-    it("Should delete a task", async () => {
+    it("Should not delete a task", async () => {
       const response = await deleteR(setUri(task, badTaskId));
       assertions(response, errorSchema, undefined, 401);
     });

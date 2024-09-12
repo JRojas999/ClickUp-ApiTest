@@ -12,7 +12,7 @@ import {
   list,
   lists,
 } from "../../src/clickupApi/endpoint.js";
-import { spaceId } from "../../src/credentials/credentials.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
 import { assertions } from "../../src/assertions/assertions.js";
 
 describe("Verify updating Task", () => {
@@ -30,7 +30,7 @@ describe("Verify updating Task", () => {
     await deleteR(setUri(list, listId));
   });
 
-  describe("Verify updating Task negative cases", () => {
+  describe("Verify updating Task positive cases", () => {
     updatedTaskList.forEach((taskData, index) => {
       it(`Should update a task. Case: ${index + 1}`, async () => {
         const response = await update(setUri(taskEndpoint, taskId), taskData);

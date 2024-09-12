@@ -6,7 +6,7 @@ import errorSchema from "../../src/resources/schema/errorSchema.json" with { typ
 import { create, deleteR, update } from "../../src/clickupApi/requestBase.js";
 import { setUri } from "../../src/utils/utils.js";
 import { list as listEndpoint, lists } from "../../src/clickupApi/endpoint.js";
-import { spaceId } from "../../src/credentials/credentials.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
 import { assertions } from "../../src/assertions/assertions.js";
 
 describe("Verify updating List", () => {

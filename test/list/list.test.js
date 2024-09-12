@@ -4,8 +4,12 @@ import errorSchema from "../../src/resources/schema/errorSchema.json" with { typ
 import { create, deleteR, get } from "../../src/clickupApi/requestBase.js";
 import { setUri } from "../../src/utils/utils.js";
 import { list, lists } from "../../src/clickupApi/endpoint.js";
-import { spaceId } from "../../src/credentials/credentials.js";
-import { assertions, deleteAssertions } from "../../src/assertions/assertions.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
+import { badListId } from "../../src/resources/ids/invalidIds.js";
+import {
+  assertions,
+  deleteAssertions,
+} from "../../src/assertions/assertions.js";
 
 describe("Verify getting and deleting List positive cases", () => {
   let listId = "";
@@ -31,9 +35,7 @@ describe("Verify getting and deleting List positive cases", () => {
 });
 
 describe("Verify getting and deleting List negative cases", () => {
-  const badListId = "124545454545";
-
-  it("Should not  get a list", async () => {
+  it("Should not get a list", async () => {
     const response = await get(setUri(list, badListId));
     assertions(response, errorSchema, undefined, 401);
   });
