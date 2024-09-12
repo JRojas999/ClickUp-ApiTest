@@ -6,7 +6,7 @@ import listData from "../../src/resources/payload/listPayload/listData.json"  wi
 import { create, deleteR } from "../../src/clickupApi/requestBase.js";
 import { setUri } from "../../src/utils/utils.js";
 import { task, tasks, list, lists } from "../../src/clickupApi/endpoint.js";
-import { spaceId } from "../../src/credentials/credentials.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
 import { assertions } from "../../src/assertions/assertions.js";
 
 describe("Verify creating Task", () => {

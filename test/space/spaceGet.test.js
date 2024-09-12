@@ -4,12 +4,11 @@ import errorSchema from "../../src/resources/schema/errorSchema.json" with { typ
 import { get, update } from "../../src/clickupApi/requestBase.js";
 import { setUri } from "../../src/utils/utils.js";
 import { space } from "../../src/clickupApi/endpoint.js";
-import { spaceId } from "../../src/credentials/credentials.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
+import { badSpaceId } from "../../src/resources/ids/invalidIds.js";
 import { assertions } from "../../src/assertions/assertions.js";
 
-describe("Verify Space endpoints", () => {
-  const badSpaceId = "89613212";
-
+describe("Verify getting Space", () => {
   before(async () => {
     await update(setUri(space, spaceId), spacedata);
   });

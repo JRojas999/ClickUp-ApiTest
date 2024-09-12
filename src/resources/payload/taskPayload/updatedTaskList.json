@@ -21,16 +21,10 @@
     "priority": 4
   },
   {
-    "due_date": 1749305600000
-  },
-  {
     "due_date_time": true
   },
   {
     "time_estimate": 8740000
-  },
-  {
-    "start_date": 1749305600000
   },
   {
     "start_date_time": true

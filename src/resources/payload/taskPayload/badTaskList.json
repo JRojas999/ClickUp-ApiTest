@@ -100,9 +100,11 @@
   {
     "data": {
       "name": "New Task Name",
-      "custom_fields": [{
-        "value": "Mi-comentario"
-      }]
+      "custom_fields": [
+        {
+          "value": "Mi-comentario"
+        }
+      ]
     },
     "status": 400
   }

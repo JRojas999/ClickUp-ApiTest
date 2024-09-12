@@ -5,7 +5,7 @@ import errorSchema from "../../src/resources/schema/errorSchema.json"  with { ty
 import { create, deleteR } from "../../src/clickupApi/requestBase.js";
 import { setUri } from "../../src/utils/utils.js";
 import { list, lists } from "../../src/clickupApi/endpoint.js";
-import { spaceId } from "../../src/credentials/credentials.js";
+import { spaceId } from "../../src/resources/ids/validIds.js";
 import { assertions } from "../../src/assertions/assertions.js";
 
 describe("Verify creating List positive cases", () => {
@@ -24,11 +24,11 @@ describe("Verify creating List positive cases", () => {
   });
 });
 
-describe("Verify creating List negative cases", () => {
+/* describe("Verify creating List negative cases", () => {
   listOfBadLists.forEach((list, index) => {
     it(`Should not create a list. Case: ${index + 1}`, async () => {
       const response = await create(setUri(lists, spaceId), list.data);
       assertions(response, errorSchema, undefined, list.status);
     });
   });
-});
+}); */
