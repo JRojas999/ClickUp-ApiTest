@@ -24,11 +24,11 @@ describe("Verify creating List positive cases", () => {
   });
 });
 
-/* describe("Verify creating List negative cases", () => {
+describe("Verify creating List negative cases", () => {
   listOfBadLists.forEach((list, index) => {
     it(`Should not create a list. Case: ${index + 1}`, async () => {
       const response = await create(setUri(lists, spaceId), list.data);
       assertions(response, errorSchema, undefined, list.status);
     });
   });
-}); */
+});
