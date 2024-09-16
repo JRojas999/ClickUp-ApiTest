@@ -1,0 +1,347 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "custom_id": {
+      "type": "null"
+    },
+    "custom_item_id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "text_content": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "orderindex": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
+        }
+      },
+      "required": ["id", "status", "color", "orderindex", "type"]
+    },
+    "orderindex": {
+      "type": "string"
+    },
+    "date_created": {
+      "type": "string"
+    },
+    "date_updated": {
+      "type": "string"
+    },
+    "date_closed": {
+      "type": "null"
+    },
+    "date_done": {
+      "type": "null"
+    },
+    "archived": {
+      "type": "boolean"
+    },
+    "creator": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "username": {
+          "type": "string"
+        },
+        "color": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "profilePicture": {
+          "type": "null"
+        }
+      },
+      "required": ["id", "username", "color", "email", "profilePicture"]
+    },
+    "assignees": {
+      "type": "array",
+      "items": {}
+    },
+    "group_assignees": {
+      "type": "array",
+      "items": {}
+    },
+    "watchers": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "username": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            },
+            "initials": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "profilePicture": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "id",
+            "username",
+            "color",
+            "initials",
+            "email",
+            "profilePicture"
+          ]
+        }
+      ]
+    },
+    "checklists": {
+      "type": "array",
+      "items": {}
+    },
+    "tags": {
+      "type": "array",
+      "items": {}
+    },
+    "parent": {
+      "type": "null"
+    },
+    "priority": {
+      "type": ["null", "object"]
+    },
+    "due_date": {
+      "type": ["null", "string"]
+    },
+    "start_date": {
+      "type": ["null", "string"]
+    },
+    "points": {
+      "type": "null"
+    },
+    "time_estimate": {
+      "type": ["null", "integer"]
+    },
+    "time_spent": {
+      "type": "integer"
+    },
+    "custom_fields": {
+      "type": "array",
+      "items": {}
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {}
+    },
+    "linked_tasks": {
+      "type": "array",
+      "items": {}
+    },
+    "locations": {
+      "type": "array",
+      "items": {}
+    },
+    "team_id": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "sharing": {
+      "type": "object",
+      "properties": {
+        "public": {
+          "type": "boolean"
+        },
+        "public_share_expires_on": {
+          "type": "null"
+        },
+        "public_fields": {
+          "type": "array",
+          "items": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "token": {
+          "type": "null"
+        },
+        "seo_optimized": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "public",
+        "public_share_expires_on",
+        "public_fields",
+        "token",
+        "seo_optimized"
+      ]
+    },
+    "permission_level": {
+      "type": "string"
+    },
+    "list": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "access": {
+          "type": "boolean"
+        }
+      },
+      "required": ["id", "name", "access"]
+    },
+    "project": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "hidden": {
+          "type": "boolean"
+        },
+        "access": {
+          "type": "boolean"
+        }
+      },
+      "required": ["id", "name", "hidden", "access"]
+    },
+    "folder": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "hidden": {
+          "type": "boolean"
+        },
+        "access": {
+          "type": "boolean"
+        }
+      },
+      "required": ["id", "name", "hidden", "access"]
+    },
+    "space": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": ["id"]
+    },
+    "attachments": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "id",
+    "custom_id",
+    "custom_item_id",
+    "name",
+    "text_content",
+    "description",
+    "status",
+    "orderindex",
+    "date_created",
+    "date_updated",
+    "date_closed",
+    "date_done",
+    "archived",
+    "creator",
+    "assignees",
+    "group_assignees",
+    "watchers",
+    "checklists",
+    "tags",
+    "parent",
+    "priority",
+    "due_date",
+    "start_date",
+    "points",
+    "time_estimate",
+    "time_spent",
+    "custom_fields",
+    "dependencies",
+    "linked_tasks",
+    "locations",
+    "team_id",
+    "url",
+    "sharing",
+    "permission_level",
+    "list",
+    "project",
+    "folder",
+    "space"
+  ]
+}

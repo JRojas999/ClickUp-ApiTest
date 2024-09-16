@@ -1,0 +1,38 @@
+[
+  {
+    "name": "New List Name"
+  },
+  {
+    "name": "New List Name",
+    "content": "New List Content"
+  },
+  {
+    "name": "New List Name",
+    "due_date": 1756699200000
+  },
+  {
+    "name": "New List Name",
+    "due_date_time": false
+  },
+  {
+    "name": "New List Name",
+    "priority": 1
+  },
+  {
+    "name": "New List Name",
+    "assignee": null
+  },
+  {
+    "name": "New List Name",
+    "status": "red"
+  },
+  {
+    "name": "New List Name",
+    "content": "New List Content",
+    "due_date": 1756699200000,
+    "due_date_time": false,
+    "priority": 1,
+    "assignee": null,
+    "status": "red"
+  }
+]

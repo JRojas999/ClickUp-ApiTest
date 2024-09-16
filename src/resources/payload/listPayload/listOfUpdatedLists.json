@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Updated List Name"
+  },
+  {
+    "content": "Updated List Content"
+  },
+  {
+    "due_date": 1756699200000
+  },
+  {
+    "due_date_time": true
+  },
+  {
+    "priority": 2
+  },
+  {
+    "assignee": "none"
+  },
+  {
+    "status": "red"
+  },
+  {
+    "unset_status": true
+  },
+  {
+    "name": "Updated List Name",
+    "content": "Updated List Content",
+    "due_date": 1756699200000
+  },
+  {
+    "priority": 2,
+    "assignee": "none",
+    "status": "red"
+  }
+]
